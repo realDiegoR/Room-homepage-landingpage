@@ -17,8 +17,8 @@ div.hide {
   background-image: url("./../room-homepage-master/images/mobile-image-hero-1.jpg");
   background-repeat: round;
   overflow: auto;
-  -webkit-transition: background 700ms;
-  transition: background 700ms;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
 }
 
 .header {
@@ -199,5 +199,9 @@ div.hide {
   user-select: none;
   /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nonclick {
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

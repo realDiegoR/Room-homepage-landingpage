@@ -26,6 +26,8 @@ function changeImageSlider() {
 }
 
 btn.addEventListener("click", ev => {
+    btn.classList.add("nonclick")
+    setTimeout(timeout, 500)
     if (window.screen.availWidth < 562) {
         if (ev.target == btn_left) {
             if (image == 1) return false
@@ -50,3 +52,7 @@ btn.addEventListener("click", ev => {
         }
     }
 })
+
+function timeout() {
+    btn.classList.remove("nonclick")
+}
