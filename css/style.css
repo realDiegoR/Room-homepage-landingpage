@@ -17,6 +17,8 @@ div.hide {
   background-image: url("./../room-homepage-master/images/mobile-image-hero-1.jpg");
   background-repeat: round;
   overflow: auto;
+  -webkit-transition: background 700ms;
+  transition: background 700ms;
 }
 
 .header {
