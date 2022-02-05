@@ -117,6 +117,10 @@ div.hide {
           align-items: center;
   width: 100%;
   margin-top: 35px;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .shop-now__text {
@@ -125,6 +129,11 @@ div.hide {
 
 .shop-now__arrow {
   margin-left: 20px;
+}
+
+.shop-now:active {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 
 .show-pic {
@@ -175,5 +184,20 @@ div.hide {
 
 .btn-container__btn:active {
   background-color: #312f2f;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 /*# sourceMappingURL=style.css.map */

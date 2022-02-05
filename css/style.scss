@@ -106,6 +106,7 @@ div.hide{
     align-items: center;
     width: 100%;
     margin-top: 35px;
+    transition: transform 400ms;
 
     &__text{
         letter-spacing: 8px;
@@ -114,6 +115,9 @@ div.hide{
     &__arrow{
         margin-left: 20px;
     }
+}
+.shop-now:active{
+    transform: translateX(20px);
 }
 
 .show-pic{
@@ -154,3 +158,13 @@ div.hide{
 .btn-container__btn:active{
     background-color: rgb(49, 47, 47);
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
