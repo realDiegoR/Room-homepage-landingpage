@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./room-homepage-master/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Room Homepage</title>
+</head>
+<body class="grid">
+    <section class="main-picture" id="main-pic">
+        <header class="header">
+            <input type="checkbox" name="" id="checkbox">
+            <label for="checkbox" class="checkbox-label" id="checkbox-label" onclick="displayNavMobile()"></label>
+            <div class="header__navbarmobile hide" id="navbarmobile">
+                <img src="./room-homepage-master/images/icon-close.svg" onclick="displayNavMobile()" style="position:relative; left:4px" alt="close">
+                <ul>
+                    <li>home</li>
+                    <li>shop</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <h1 class="header__title">room</h1>
+    
+    
+            <div class="header--bar">
+                <h1 class="header--title"></h1>
+            </div>
+        </header>
+        
+        <div class="btn-container" id="btn"> 
+            <div class="btn-container__btn" id="btn-left">
+                <img src="./room-homepage-master/images/icon-angle-left.svg">
+            </div>
+            <div class="btn-container__btn" id="btn-right">
+                <img src="./room-homepage-master/images/icon-angle-right.svg">
+            </div> 
+        </div>
+    </section>
+
+    <section class="text-box">
+        <h2 class="text-box__title">Discover innovative ways to decorate</h2>
+        <p class="text-box__text">We provide unmatched quality, comfort and style for property owners across the country. Our experts combine form and function and bringing your vision to life. Create a room in your own style with your collection and make your property a reflection of you and what you love.</p>
+        
+        <div class="shop-now">
+            <p class="shop-now__text">SHOP NOW</p>
+            <img src="./room-homepage-master/images/icon-arrow.svg" class="shop-now__arrow" alt="">
+        </div>
+    </section>
+
+    <section class="show-pic">
+        <img src="./room-homepage-master/images/icon-angle-left.svg">
+
+    </section>
+
+    <section class="text-box">
+        <h2 class="text-box__title text-box__title--uppercase">About your furniture</h2>
+        <p class="text-box__text">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+    </section>
+
+    <section class="show-pic show-pic--light">
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

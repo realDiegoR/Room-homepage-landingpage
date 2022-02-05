@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Hind Siliguri";
+}
+
+div.hide {
+  opacity: 0;
+}
+
+.main-picture {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url("./../room-homepage-master/images/mobile-image-hero-1.jpg");
+  background-repeat: round;
+  overflow: auto;
+}
+
+.header {
+  position: relative;
+  padding: 20px 0;
+}
+
+.header__title {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.header__navbarmobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.header__navbarmobile img {
+  width: 18px;
+  height: 18px;
+}
+
+.header__navbarmobile ul {
+  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.header__navbarmobile ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+#checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  display: block;
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 20px;
+  background-image: url("./../room-homepage-master/images/icon-hamburger.svg");
+}
+
+.text-box {
+  width: 100%;
+  padding: 50px 25px;
+  background-color: #fdfefa;
+}
+
+.text-box__title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.text-box__title--uppercase {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+}
+
+.text-box__text {
+  color: #999797;
+  font-size: 12px;
+}
+
+.shop-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.shop-now__text {
+  letter-spacing: 8px;
+}
+
+.shop-now__arrow {
+  margin-left: 20px;
+}
+
+.show-pic {
+  width: 100%;
+  height: 200px;
+  background-image: url("./../room-homepage-master/images/image-about-dark.jpg");
+  background-repeat: round;
+}
+
+.show-pic--light {
+  background-image: url("./../room-homepage-master/images/image-about-light.jpg");
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.btn-container__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: black;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+}
+
+.btn-container__btn img {
+  width: 10px;
+  height: 13px;
+}
+
+.btn-container__btn:active {
+  background-color: #312f2f;
+}
+/*# sourceMappingURL=style.css.map */
