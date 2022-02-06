@@ -204,4 +204,47 @@ div.hide {
 .nonclick {
   pointer-events: none;
 }
+
+@media screen and (min-width: 562px) {
+  .grid {
+    min-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[11];
+        grid-template-columns: repeat(11, 1fr);
+    place-content: center;
+    -ms-grid-rows: 60vh 40vh;
+        grid-template-rows: 60vh 40vh;
+  }
+  .main-picture {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / 8;
+    height: auto;
+  }
+  .text-box--big {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 4;
+    grid-column: 8 / 12;
+    z-index: -99;
+  }
+  .show-pic--dark {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  .text-box--small {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 5;
+    grid-column: 4 / 9;
+  }
+  .show-pic--light {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-column: 9 / 12;
+  }
+  .btn-container {
+    z-index: 99;
+  }
+}
 /*# sourceMappingURL=style.css.map */

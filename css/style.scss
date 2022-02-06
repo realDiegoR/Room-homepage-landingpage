@@ -172,3 +172,41 @@ div.hide{
 .nonclick{
     pointer-events: none;
 }
+
+@media screen and (min-width: 562px) {
+    .grid{
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        place-content: center;
+        grid-template-rows: 60vh 40vh;
+        
+    }
+
+    .main-picture{
+        grid-column: 1 / 8;
+        height: auto;
+    }
+
+    .text-box--big{
+        grid-column: 8 / 12;
+        z-index: -99;
+    }
+
+    .show-pic--dark{
+        grid-column: 1 / 4;
+    }
+
+    .text-box--small{
+        grid-column: 4 / 9;
+    }
+
+    .show-pic--light{
+        grid-column: 9 / 12;
+    }
+
+    .btn-container{
+        // right: -40px;
+        z-index: 99;
+    }
+}

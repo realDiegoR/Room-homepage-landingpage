@@ -41,8 +41,11 @@ btn.addEventListener("click", ev => {
             if (image == 3) return false
             if (image == 1) {
                 hero.style.backgroundImage = heroImages.mobile_hero_2
+                hero.style.backgroundImage = heroImages.mobile_hero_2
             } else if (image == 2) {
                 hero.style.backgroundImage = heroImages.mobile_hero_3
+                hero.style.backgroundImage = heroImages.mobile_hero_3
+
             }
             image++
         }
@@ -51,6 +54,7 @@ btn.addEventListener("click", ev => {
             
         }
     }
+    alert(hero.style.backgroundImage)
 })
 
 function timeout() {
