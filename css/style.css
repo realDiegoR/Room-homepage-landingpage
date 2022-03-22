@@ -246,5 +246,40 @@ div.hide {
   .btn-container {
     z-index: 99;
   }
+  .text-box {
+    padding: 40px 25px;
+  }
+  .text-box__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+  }
+  .text-box__title--uppercase {
+    letter-spacing: 5px;
+    font-size: 10px;
+  }
+  .text-box__text {
+    font-size: 11px;
+  }
+  .show-pic {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .text-box__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text-box__title--uppercase {
+    font-size: 15px;
+  }
+  .text-box__text {
+    font-size: 12px;
+  }
+  .btn-container {
+    z-index: 99;
+  }
 }
 /*# sourceMappingURL=style.css.map */

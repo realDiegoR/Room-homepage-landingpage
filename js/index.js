@@ -25,6 +25,10 @@ function changeImageSlider() {
     // if ()
 }
 
+window.addEventListener("change", ev => {
+    alert(2)
+})
+
 btn.addEventListener("click", ev => {
     btn.classList.add("nonclick")
     setTimeout(timeout, 500)
@@ -50,8 +54,22 @@ btn.addEventListener("click", ev => {
             image++
         }
     } else {
-        if (ev.target == btn_right) {
-            
+        if (ev.target == btn_left) {
+            if (image == 1) return false
+            if (image == 3) {
+                hero.style.backgroundImage = heroImages.desk_hero_2
+            } else if (image == 2) {
+                hero.style.backgroundImage = heroImages.desk_hero_1
+            }
+            image--
+        } else {
+            if (image == 3) return false
+            if (image == 1) {
+                hero.style.backgroundImage = heroImages.desk_hero_2
+            } else if (image == 2) {
+                hero.style.backgroundImage = heroImages.desk_hero_3
+            }
+            image++
         }
     }
     alert(hero.style.backgroundImage)
