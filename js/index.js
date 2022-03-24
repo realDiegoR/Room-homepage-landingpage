@@ -14,6 +14,13 @@ const heroImages = {
     mobile_hero_3: "url(./room-homepage-master/images/mobile-image-hero-3.jpg)",
 
 }
+
+if (window.innerWidth < 562) {
+    hero.style.backgroundImage = heroImages.mobile_hero_1
+} else {
+    hero.style.backgroundImage = heroImages.desk_hero_1
+}
+
 const hero_1 = "url(./../../room-homepage-master/images/desktop-image-hero-1.jpg)"
 let image = 1
 

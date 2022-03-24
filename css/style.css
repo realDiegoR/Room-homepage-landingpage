@@ -14,7 +14,6 @@ div.hide {
   width: 100%;
   height: 300px;
   position: relative;
-  background-image: url("./../room-homepage-master/images/mobile-image-hero-1.jpg");
   background-repeat: round;
   overflow: auto;
   -webkit-transition: background 500ms;
@@ -24,10 +23,10 @@ div.hide {
 .header {
   position: relative;
   padding: 20px 0;
+  text-align: center;
 }
 
 .header__title {
-  text-align: center;
   color: white;
   letter-spacing: 1px;
   font-weight: 500;
@@ -67,6 +66,24 @@ div.hide {
 .header__navbarmobile ul li {
   display: inline-block;
   padding: 0 5px;
+}
+
+.header--bar {
+  display: none;
+  color: #fdf7f7;
+}
+
+.header--bar ul {
+  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
+  display: inline;
+  margin-left: 20px;
+}
+
+.header--bar ul li {
+  display: inline-block;
+  padding: 0 8px;
 }
 
 #checkbox {
@@ -216,6 +233,16 @@ div.hide {
     -ms-grid-rows: 60vh 40vh;
         grid-template-rows: 60vh 40vh;
   }
+  .header {
+    text-align: left;
+    padding: 20px;
+  }
+  .header__navbarmobile {
+    display: none;
+  }
+  .header--bar {
+    display: inline;
+  }
   .main-picture {
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
@@ -265,6 +292,9 @@ div.hide {
   .show-pic {
     height: auto;
   }
+  .checkbox-label {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 740px) {
@@ -280,6 +310,9 @@ div.hide {
   }
   .btn-container {
     z-index: 99;
+  }
+  .header--bar ul li {
+    padding: 0 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
