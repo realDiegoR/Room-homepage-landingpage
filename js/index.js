@@ -5,6 +5,7 @@ const hero = document.getElementById("main-pic")
 const btn = document.getElementById("btn")
 const btn_left = document.getElementById("btn-left")
 const btn_right = document.getElementById("btn-right")
+let image = 1
 const heroImages = {
     desk_hero_1: "url(./room-homepage-master/images/desktop-image-hero-1.jpg)",
     desk_hero_2: "url(./room-homepage-master/images/desktop-image-hero-2.jpg)",
@@ -21,20 +22,10 @@ if (window.innerWidth < 562) {
     hero.style.backgroundImage = heroImages.desk_hero_1
 }
 
-const hero_1 = "url(./../../room-homepage-master/images/desktop-image-hero-1.jpg)"
-let image = 1
 
 function displayNavMobile() {
     navBarMobile.classList.toggle("hide")
 }
-
-function changeImageSlider() {
-    // if ()
-}
-
-window.addEventListener("change", ev => {
-    alert(2)
-})
 
 btn.addEventListener("click", ev => {
     btn.classList.add("nonclick")
@@ -79,7 +70,6 @@ btn.addEventListener("click", ev => {
             image++
         }
     }
-    alert(hero.style.backgroundImage)
 })
 
 function timeout() {
